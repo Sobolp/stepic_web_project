@@ -14,11 +14,10 @@ sudo /etc/init.d/mysql start
 
 mysql -uroot -e "create database qa"
 
-mysql -uroot -e "CREATE USER 'box'@'localhost' IDENTIFIED BY 'mypass'"
+mysql -uroot -e "CREATE USER 'box'@'localhost'"
 
 mysql -uroot -e "GRANT ALL ON qa.* TO 'box'@'localhost'"
 
-mysql -uroot -e "grant all privileges on *.* to box@localhost identified by 'mypass' with grant option"
 
 /** for create new project. Now not need to use (result commited in VCS)
 django-admin startproject ask
