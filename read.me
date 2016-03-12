@@ -20,6 +20,9 @@ mysql -uroot -e "GRANT ALL ON qa.* TO 'box'@'localhost'"
 
 ~/web/ask/manage.py syncdb
 
+show tables from qa;
+show COLUMNS FROM qa_question_likes from qa;
+
 /** for create new project. Now not need to use (result commited in VCS)
 django-admin startproject ask
 
