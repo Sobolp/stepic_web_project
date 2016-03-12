@@ -18,6 +18,7 @@ mysql -uroot -e "CREATE USER 'box'@'localhost'"
 
 mysql -uroot -e "GRANT ALL ON qa.* TO 'box'@'localhost'"
 
+~/web/ask/manage.py syncdb
 
 /** for create new project. Now not need to use (result commited in VCS)
 django-admin startproject ask
