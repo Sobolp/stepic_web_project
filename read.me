@@ -5,3 +5,13 @@ ps -o pid,euser,egroup,comm,args -C nginx
 git clone https://github.com/Sobolp/stepic_web_project.git /home/box/web
 
 bash /home/box/web/init.sh
+
+sudo apt-get update
+
+sudo apt-get install mc
+
+django-admin startproject ask
+
+cd ask/
+
+django-admin startapp qa
