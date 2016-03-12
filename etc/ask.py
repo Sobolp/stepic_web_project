@@ -8,6 +8,5 @@ CONFIG = {
         '--workers=2',
         '--timeout=60',
         'ask.wsgi:application',
-        #'hello:app',
     ),
 }
